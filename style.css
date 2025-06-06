@@ -1,0 +1,82 @@
+body{
+    background-image: url(https://i.pinimg.com/originals/7d/68/ab/7d68abd537942d95ac5b2cbb53ed3cf0.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+#pai{
+    border: 2px solid black;
+    padding: 5px;
+}
+
+.neto{
+    border: 2px solid green;
+    padding: 5px;
+}
+
+/* seletor de descendentes ( todos dentro do pai ) */
+/* #pai p {
+    background-color: lightgray;
+} */
+
+/* filho direto ( só filhos ) */
+#pai > p{
+    background-color: red;
+}
+.filho > p{
+    background-color: #42d456;
+}
+
+/* pseudo classes */
+p:hover{
+    background-color: orange;
+}
+#pai > p:hover{
+    background-color: white;
+}
+
+/* quando os campos estão ativos */
+input:focus{
+    background-color: salmon;
+    border: solid 3px red;
+}
+
+/* pseudo-elementos ( insere ou estiliza elementos ) */
+p::after{
+    content: "";
+    font-size: 10px;
+    color: mediumspringgreen;
+}
+
+/* conteúdo selecionado */
+::selection{
+    background-color: aqua;
+    color: #452f39;
+}
+
+
+
+
+
+
+
+
+
+/* style classico */
+
+h1{
+    color: black;
+    text-align: center;
+    margin: auto;
+    font-size: 80px;
+    text-shadow: 4px 4px 0 red, -4px 4px 0 orangered, -4px -4px 0 orange, 4px -4px 0 yellow
+}
+h2{
+    color: white;   
+    text-align: center;
+    margin: auto;
+    font-size: 50px;
+    text-shadow: 4px 4px 0 black, -4px 4px 0 darkgray, -4px -4px 0 gray, 4px -4px 0 
+}
